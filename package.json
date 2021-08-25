@@ -1,11 +1,12 @@
 {
   "name": "djs-light",
-  "version": "0.0.3",
+  "version": "0.0.4-1",
   "description": "A personal, lightweight discord library",
   "main": "./lib/index.mjs",
   "files": [
     ".gitignore",
-    "README.md"
+    "README.md",
+    "lib"
   ],
   "directories": {
     "lib": "lib"
