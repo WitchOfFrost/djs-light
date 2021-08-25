@@ -1,6 +1,6 @@
 {
   "name": "djs-light",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A personal, lightweight discord library",
   "main": "./lib/index.mjs",
   "files": [
