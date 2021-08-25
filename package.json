@@ -5,7 +5,8 @@
   "main": "./lib/index.mjs",
   "files": [
     ".gitignore",
-    "README.md"
+    "README.md",
+    "lib"
   ],
   "directories": {
     "lib": "lib"
