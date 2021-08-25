@@ -1,6 +1,9 @@
 name: Publish Release to NPM
 
 on:
+  push:
+    branches:
+      - "main"
   release:
     types: [published]
 
