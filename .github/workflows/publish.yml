@@ -15,11 +15,11 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org/'
       - run: yarn install
-        if: "!github.event.release.prerelease"
+        if: '!github.event.release.prerelease'
         - run: npm publish --access public
           env:
             NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-        if: "!github.event.release.prerelease"
+        if: 'github.event.release.prerelease'
         - run: npm publish --access public --tag next
           env:
             NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
