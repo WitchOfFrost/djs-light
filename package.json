@@ -12,7 +12,10 @@
   },
   "scripts": {
     "test": "node test/index.mjs",
-    "publish": "git push && npm publish"
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "release-it": "*"
   },
   "repository": {
     "type": "git",
