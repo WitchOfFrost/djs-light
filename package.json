@@ -1,6 +1,6 @@
 {
   "name": "djs-light",
-  "version": "0.0.4-6",
+  "version": "0.0.5",
   "description": "A personal, lightweight discord library",
   "main": "./lib/index.mjs",
   "files": [
@@ -13,6 +13,7 @@
   },
   "scripts": {
     "test": "set NODE_ENV=development&& node test/index.mjs",
+    "prod": "set NODE_ENV=production&& node test/index.mjs",
     "preview": "npm publish --access public --tag next && git push",
     "release": "npm publish --access public && git push"
   },
