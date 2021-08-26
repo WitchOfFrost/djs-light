@@ -12,7 +12,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "set NODE_ENV=development&& node test/index.mjs"
+    "test": "set NODE_ENV=development&& node test/index.mjs",
+    "publish-pre": "npm publish --access public --tag next && git push",
+    "publish": "npm publish --access public && git push"
   },
   "repository": {
     "type": "git",
