@@ -1,6 +1,6 @@
 {
   "name": "djs-light",
-  "version": "0.0.4-1",
+  "version": "0.0.4-2",
   "description": "A personal, lightweight discord library",
   "main": "./lib/index.mjs",
   "files": [
@@ -12,7 +12,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "node test/index.mjs"
+    "test": "set NODE_ENV=development&& node test/index.mjs"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
   "homepage": "https://github.com/WitchOfFrost/djs-light#readme",
   "dependencies": {
     "axios": "^0.21.1",
-    "yarn": "^1.22.11"
+    "winston": "^3.3.3",
+    "ws": "^8.2.0"
   }
 }
