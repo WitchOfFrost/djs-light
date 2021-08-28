@@ -19,11 +19,21 @@ function main() {
     // Run code on message event
 
     djsLight.events.on('message', msg => {
+
+        // Return if message sender is a bot
+
         if (msg.author.bot) return;
 
-        // Send Message to the same channel
+        // Mirror content of every user's message to the channel
 
-        djsLight.message.send(msg.channel_id, msg.content);
+        djsLight.message.send(msg.channel_id, { content: msg.content });
+
+        // Send an embed with title "YEP" to the channel
+
+        djsLight.message.send(msg.channel_id, { "embeds": [{ title: "Yep" }] });
+
+        // Log the user message and tag in console
+
         console.log(`Message by: ${msg.author.username}#${msg.author.discriminator} || Content: ${msg.content}`);
     });
 };
